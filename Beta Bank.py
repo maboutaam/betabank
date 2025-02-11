@@ -1,42 +1,3 @@
-#!/usr/bin/env python
-# coding: utf-8
-
-# Hello Mohamad!
-# 
-# I’m happy to review your project today.
-# I will mark your mistakes and give you some hints how it is possible to fix them. We are getting ready for real job, where your team leader/senior colleague will do exactly the same. Don't worry and study with pleasure! 
-# 
-# Below you will find my comments - **please do not move, modify or delete them**.
-# 
-# You can find my comments in green, yellow or red boxes like this:
-# 
-# <div class="alert alert-block alert-success">
-# <b>Reviewer's comment</b> <a class="tocSkip"></a>
-# 
-# Success. Everything is done succesfully.
-# </div>
-# 
-# <div class="alert alert-block alert-warning">
-# <b>Reviewer's comment</b> <a class="tocSkip"></a>
-# 
-# Remarks. Some recommendations.
-# </div>
-# 
-# <div class="alert alert-block alert-danger">
-# 
-# <b>Reviewer's comment</b> <a class="tocSkip"></a>
-# 
-# Needs fixing. The block requires some corrections. Work can't be accepted with the red comments.
-# </div>
-# 
-# You can answer me by using this:
-# 
-# <div class="alert alert-block alert-info">
-# <b>Student answer.</b> <a class="tocSkip"></a>
-# 
-# Text here.
-# </div>
-
 # # Beta Bank 
 
 # ### Since Beta Bank would rather hang onto its current clientele than draw in new ones, we must forecast if a given client will quit in the near future for this project.
@@ -109,14 +70,6 @@ df.dtypes
 df.isnull().sum()
 
 
-# <div class="alert alert-block alert-success">
-# <b>Reviewer's comment</b> <a class="tocSkip"></a>
-# 
-# Nice initial review.
-# </div>
-
-# ### There are missing values in the Tenure column.
-
 # In[8]:
 
 
@@ -127,14 +80,6 @@ df.isnull().sum()
 median_tenure = df['Tenure'].median()
 df['Tenure'].fillna(median_tenure, inplace=True)
 
-
-# <div class="alert alert-block alert-warning">
-# <b>Reviewer's comment</b> <a class="tocSkip"></a>
-# 
-# Based on task description "Tenure — period of maturation for a customer’s fixed deposit (years)". Some clients may not have deposit and it's OK.
-#     
-# Our recommendation is to fill NaNs with dummy value here.
-# </div>
 
 # ### By using the above code we addressed the problem of having missing values in 'Tenure' column.
 
@@ -431,11 +376,6 @@ print(f"F1 Score for Test Set: {f1_test:.4f}")
 
 # ### As seen in the above curve, AUC is high because ROC is close to the upper left corner. The AUC value is approximately 1. This means that the model is performing well.
 
-# <div class="alert alert-block alert-success">
-# <b>Reviewer's comment</b> <a class="tocSkip"></a>
-# 
-# Excellent!
-# </div>
 
 # # Conclusion
 # ### According to the Class Distribution of Target Variable, 7963 clients did not exist the bank and 2037 clients exited the bank.
@@ -454,23 +394,6 @@ print(f"F1 Score for Test Set: {f1_test:.4f}")
 # ### A score of 0.8530 for AUC-ROC is relatively goof, because this means that the model have a strong ability to know which clients would churn and who would not.
 # ### F1 = 0.6048 suggests that the model is performing well at balancing precision and recall, but there is room for improvement.
 
-# <div class="alert alert-block alert-success">
-# <b>Reviewer's comment</b> <a class="tocSkip"></a>
-# 
-# Good final conclusion!
-# </div>
-
-# <div class="alert alert-block alert-success">
-# <b>Overall reviewer's comment</b> <a class="tocSkip"></a>
-#     
-# Thank you for sending your project. You've done a really good job on it!
-# 
-# I can note the high level of code. Well done!
-#     
-# <span class="text-warning">Some advice: it's better not to use headings for comments in your work =)</span>
-#     
-# I'm glad to say that your project has been accepted and you can go to the next sprint.
-# </div>
 
 # In[ ]:
 
